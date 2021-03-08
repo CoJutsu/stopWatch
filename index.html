@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/d18218a81d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Timer</title>
+  </head>
+  <body>
+    <main class="container">
+      <p class="timerStopped">Timer Stopped</p>
+      <span id="hours" title="had passed"></span>
+      <section class="timer">
+        <span class="border">
+          <p><span id="mins">00</span>:<span id="secs">00</span></p>
+        </span>
+      </section>
+
+      <section class="functions">
+        <button id="start" class="btn">
+          Start <i class="fas fa-play"></i>
+        </button>
+        <button id="stop" class="btn">
+          Stop <i class="far fa-stop-circle"></i>
+        </button>
+        <button id="reset" class="btn">
+          Reset <i class="fas fa-redo"></i>
+        </button>
+      </section>
+
+      <div class="github">
+        <a href="https://github.com/CoJutsu" target="_blank" id="github">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </main>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
