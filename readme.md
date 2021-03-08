@@ -2,4 +2,4 @@
 
 Stay Motivated,
 Do Your Job and More,
-Collaborate with Shadow.
+Collaborate with Shadows.
