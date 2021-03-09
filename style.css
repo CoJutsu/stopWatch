@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+/* Resets */
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +24,8 @@ a {
   color: #fdfdfd;
   text-decoration: none;
 }
+
+/* Main Styles */
 
 .container {
   position: relative;
@@ -155,6 +159,25 @@ a {
   transform: scale(1.05);
 }
 
+#mute {
+  display: none;
+}
+
+#speaker {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  filter: blur(2px);
+  transition: filter 0.3s ease-in-out;
+}
+
+#speaker:hover {
+  filter: blur(0);
+}
+
+/* Animation */
+
 @keyframes fade {
   0% {
     opacity: 1;
@@ -170,5 +193,85 @@ a {
   }
   100% {
     opacity: 1;
+  }
+}
+
+/* Responsive */
+
+@media screen and (min-width: 1800px) {
+  .timer {
+    width: 500px;
+    height: 500px;
+  }
+  .timer p {
+    font-size: 8rem;
+  }
+  .btn {
+    margin-top: 50px;
+    width: 10%;
+    height: 100%;
+  }
+  .types {
+    font-size: 2.5rem;
+  }
+  .function {
+    margin-left: 10px;
+    font-size: 2rem;
+  }
+  .fa-stop-circle {
+    font-size: 2.5rem;
+  }
+  .github {
+    font-size: 4rem;
+  }
+  #speaker {
+    font-size: 2.5rem;
+    filter: blur(2.8px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .timer {
+    width: 250px;
+    height: 250px;
+  }
+  .timer p {
+    font-size: 3rem;
+  }
+  .types {
+    display: none;
+  }
+  .function {
+    font-size: 1.3rem;
+  }
+
+  .btn {
+    margin-top: 50px;
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .timer {
+    width: 230px;
+    height: 230px;
+  }
+  .timer p {
+    font-size: 2.5rem;
+  }
+  .btn {
+    margin-top: 50px;
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .timer {
+    width: 200px;
+    height: 200px;
+  }
+  .btn {
+    margin-top: 25px;
+    width: 30%;
   }
 }
