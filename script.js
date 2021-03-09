@@ -49,7 +49,6 @@ startBtn.addEventListener("click", () => {
 
   clearInterval(interval);
   interval = setInterval(timer, 1000);
-
 });
 
 stopBtn.addEventListener("click", () => {
@@ -78,6 +77,7 @@ resetBtn.addEventListener("click", () => {
     item.classList.remove("btnStopped");
     item.classList.remove("btnStarted");
   });
+  speaker.classList.replace("fa-volume-mute", "fa-volume-up");
 
   setTimeout(() => {
     clearInterval(interval);
