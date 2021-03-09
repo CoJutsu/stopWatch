@@ -77,7 +77,6 @@ resetBtn.addEventListener("click", () => {
     item.classList.remove("btnStopped");
     item.classList.remove("btnStarted");
   });
-  speaker.classList.replace("fa-volume-mute", "fa-volume-up");
 
   setTimeout(() => {
     clearInterval(interval);
@@ -88,6 +87,7 @@ resetBtn.addEventListener("click", () => {
     getMins.innerHTML = "0" + mins;
     getHours.innerHTML = "";
     counter.pause();
+    speaker.classList.replace("fa-volume-mute", "fa-volume-up");
     background.play();
   }, 500);
 });
