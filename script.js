@@ -49,6 +49,7 @@ startBtn.addEventListener("click", () => {
 
   clearInterval(interval);
   interval = setInterval(timer, 1000);
+
 });
 
 stopBtn.addEventListener("click", () => {
@@ -96,7 +97,6 @@ mute.addEventListener("click", () => {
     counter.pause();
     speaker.classList.replace("fa-volume-up", "fa-volume-mute");
   } else {
-    counter.play();
     speaker.classList.replace("fa-volume-mute", "fa-volume-up");
   }
 });
